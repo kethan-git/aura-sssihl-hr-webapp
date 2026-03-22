@@ -8,40 +8,34 @@
 
 ---
 
-## Screenshots
-
-> *(Add screenshots here after deployment)*
-
----
-
 ## Features at a Glance
 
 | Module | Description |
 |---|---|
-| 📊 Analytics Dashboard | Organization-wide attrition patterns and workforce health metrics |
-| 🎛️ What-If Simulator | Real-time attrition risk simulation using interactive sliders |
-| 🔬 Root Cause Analysis | Statistical correlation analysis + AI-generated insights |
-| 🎯 Attrition Predictor | Individual employee risk scoring with intervention recommendations |
-| 📁 Upload Your Data | Plug in your own HR dataset and refresh all analysis instantly |
+| Analytics Dashboard | Organization-wide attrition patterns and workforce health metrics |
+| What-If Simulator | Real-time attrition risk simulation using interactive sliders |
+| Root Cause Analysis | Statistical correlation analysis + AI-generated insights |
+| Attrition Predictor | Individual employee risk scoring with intervention recommendations |
+| Upload Your Data | Plug in your own HR dataset and refresh all analysis instantly |
 
 ---
 
 ## Modules
 
-### 📊 Analytics Dashboard
-A real-time view of your entire workforce. Visualizes attrition across six dimensions — department, job role, age group, tenure, burnout distribution, and salary buckets. Four KPI cards track total employees, overall attrition rate, average burnout score, and average job satisfaction. Includes a department × tenure heatmap for cross-dimensional risk identification.
+### Analytics Dashboard
+A real-time view of your entire workforce. Visualizes attrition across six dimensions - department, job role, age group, tenure, burnout distribution, and salary buckets. Four KPI cards track total employees, overall attrition rate, average burnout score, and average job satisfaction. Includes a department × tenure heatmap for cross-dimensional risk identification.
 
-### 🎛️ What-If Simulator
-An interactive risk simulation engine. Adjust 10 employee parameters — burnout score, overtime hours, job satisfaction, work-life balance, salary, manager effectiveness, training hours, sentiment score, tenure, and age — and watch the attrition risk gauge update in real time. Includes a salary impact curve showing how compensation changes affect risk across the full salary range, and a key insights panel quantifying the effect of each intervention.
+### What-If Simulator
+An interactive risk simulation engine. Adjust 10 employee parameters - burnout score, overtime hours, job satisfaction, work-life balance, salary, manager effectiveness, training hours, sentiment score, tenure, and age - and watch the attrition risk gauge update in real time. Includes a salary impact curve showing how compensation changes affect risk across the full salary range, and a key insights panel quantifying the effect of each intervention.
 
-### 🔬 Root Cause Analysis
-Surfaces the structural drivers of attrition. Displays Pearson correlation coefficients for 11 features against attrition, a department health matrix, a satisfaction vs. attrition scatter plot, and six dynamically generated at-risk segments. The AI Insights panel uses a large language model (Llama 3.3 70B via Groq) to generate a data-driven root cause analysis and recommendations — recalculated from your live dataset every time.
+### Root Cause Analysis
+Surfaces the structural drivers of attrition. Displays Pearson correlation coefficients for 11 features against attrition, a department health matrix, a satisfaction vs. attrition scatter plot, and six dynamically generated at-risk segments. The AI Insights panel uses a large language model (Llama 3.3 70B via Groq) to generate a data-driven root cause analysis and recommendations - recalculated from your live dataset every time.
 
-### 🎯 Attrition Predictor
+### Attrition Predictor
 Enter any employee profile across 11 parameters and receive an instant attrition probability score powered by a logistic regression model. The result includes a risk classification (Low / Medium / High), the top contributing risk factors, a list of recommended interventions, and a benchmark comparison against company and department averages.
 
-### 📁 Upload Your Data
-Replace the built-in demo dataset with your own HR data. Upload an XLSX file with 15 required columns and AURA recomputes every chart, KPI, correlation, prediction, and AI insight instantly. A downloadable template is provided to get started quickly. All processing happens in the browser — your data never leaves your device.
+### Upload Your Data
+Replace the built-in demo dataset with your own HR data. Upload an XLSX file with 15 required columns and AURA recomputes every chart, KPI, correlation, prediction, and AI insight instantly. A downloadable template is provided to get started quickly. All processing happens in the browser - your data never leaves your device.
 
 ---
 
@@ -49,13 +43,13 @@ Replace the built-in demo dataset with your own HR data. Upload an XLSX file wit
 
 | Layer | Technology |
 |---|---|
-| Frontend | Vanilla HTML, CSS, JavaScript — single file, zero build step |
+| Frontend | Vanilla HTML, CSS, JavaScript - single file, zero build step |
 | Charts | Chart.js 4.4.1 |
 | Spreadsheet parsing | SheetJS (xlsx) 0.18.5 |
-| Fonts | Google Fonts — Lora |
+| Fonts | Google Fonts - Lora |
 | AI Insights | Llama 3.3 70B via Groq API |
 | Hosting | Netlify (static site + serverless function) |
-| API Security | Netlify serverless proxy — API key never exposed to browser |
+| API Security | Netlify serverless proxy - API key never exposed to browser |
 
 ---
 
@@ -140,7 +134,7 @@ AURA is hosted on **Netlify** with a serverless function acting as a secure prox
 1. Fork this repository
 2. Connect it to Netlify via "Import from Git"
 3. Add environment variable: `GROQ_API_KEY` = your key from [console.groq.com](https://console.groq.com)
-4. Deploy — done
+4. Deploy - done
 
 > Groq is free to use with no credit card required.
 
